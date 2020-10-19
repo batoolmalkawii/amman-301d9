@@ -8,7 +8,7 @@ function Dog (dog){
 
 Dog.prototype.render = function (){
     let dogClone = $('.dog-template').clone();
-    $('section').append(dogClone);
+    $('main').append(dogClone);
     dogClone.find('h2').text(this.name);
     dogClone.find('img').attr('src', this.image_url);
     dogClone.find('p').text(this.hobbies);
